@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  background: url(../images/bg.jpg) fixed center/cover;
+}/*# sourceMappingURL=index.css.map */
