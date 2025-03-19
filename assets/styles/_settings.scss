@@ -1,9 +1,32 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 ::first-letter {
     text-transform: uppercase;
+}
+
+$color1: red;
+$color2: blue;
+$color3: green;
+$white: white;
+$black: black;
+
+@mixin flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
