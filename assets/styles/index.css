@@ -132,10 +132,99 @@ nav li {
   color: white;
 }
 
+main {
+  background: white;
+  margin: 0 auto;
+  width: 72.5%;
+  margin-bottom: 30px;
+}
+
+footer {
+  background: white;
+  margin: 0 auto;
+  width: 72.5%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 .button-top {
   color: white;
 }
 
 .button-top:visited {
   color: white;
+}
+
+.main_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 50px;
+}
+
+.second_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.second_part div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 50px;
+}
+
+form {
+  margin: 40px;
+}
+form input,
+form textarea {
+  display: block;
+}
+
+address {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  margin: 40px;
+}
+address .contact {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+address .contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */

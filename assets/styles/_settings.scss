@@ -30,3 +30,10 @@ $black: black;
     justify-content: center;
     align-items: center;
 }
+
+@mixin main-layout {
+    background: $white;
+    margin: 0 auto;
+    width: 72.5%;
+    margin-bottom: 30px;
+}

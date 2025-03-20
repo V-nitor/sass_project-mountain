@@ -1,0 +1,17 @@
+.main_part{
+    @include flexcenter;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+}
+
+.second_part{
+    @include flexcenter;
+
+    div{
+        @include flexcenter;
+        flex-direction: column;
+        text-align: center;
+        margin: 50px;
+    }
+}
