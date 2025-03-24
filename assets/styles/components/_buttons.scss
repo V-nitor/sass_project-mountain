@@ -1,7 +1,17 @@
-.button-top{
+.button-top, .button-top:visited{
     color: $white;
 }
 
-.button-top:visited{
-    color: $white;
+.button2, .button2:visited{
+    margin-top: 40px;
+    display: inline-block;
+    font-family: 'font1', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $black;
+    background: $white;
+    border: 3px solid $black;
+    padding: 10px 30px;
+    text-decoration: none;
 }

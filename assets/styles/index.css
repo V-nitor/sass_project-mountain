@@ -137,6 +137,13 @@ main {
   margin: 0 auto;
   width: 72.5%;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 25px auto 25px;
+  width: 90%;
 }
 
 footer {
@@ -148,30 +155,79 @@ footer {
   grid-template-columns: 50% 50%;
 }
 
-.button-top {
+.button-top, .button-top:visited {
   color: white;
 }
 
-.button-top:visited {
-  color: white;
+.button2, .button2:visited {
+  margin-top: 40px;
+  display: inline-block;
+  font-family: "font1", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background: white;
+  border: 3px solid black;
+  padding: 10px 30px;
+  text-decoration: none;
 }
 
 .main_part {
+  margin: 50px;
+}
+.main_part h3 {
+  font-size: 1em;
+  font-family: "font-2", serif;
+  font-weight: 400;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.main_part h3::before {
+  content: "";
+  position: absolute;
+  background: rgb(210, 210, 210);
+  height: 1px;
+  width: 30vw;
+  right: 60%;
+  bottom: 10px;
+}
+.main_part h3::after {
+  content: "";
+  position: absolute;
+  background: rgb(210, 210, 210);
+  height: 1px;
+  width: 30vw;
+  left: 60%;
+  bottom: 10px;
+}
+.main_part h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  margin: 50px;
+  font-size: 2em;
+  font-family: "font1", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 2.5px;
+  margin: 50px 0 25px;
+}
+.main_part h2 span {
+  line-height: 1.25;
+  font-size: 1em;
+}
+.main_part p {
+  font-family: "font-2", serif;
+  font-style: italic;
+  line-height: 2;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .second_part {
@@ -184,23 +240,62 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .second_part div {
+  margin: 50px;
+}
+.second_part div h3 {
+  font-size: 1em;
+  font-family: "font-2", serif;
+  font-weight: 400;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.second_part div h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  margin: 50px;
+  font-size: 1.5em;
+  font-family: "font1", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 2.5px;
+  margin: 50px 0 25px;
+}
+.second_part div h2 span {
+  line-height: 1.25;
+  font-size: 1em;
+}
+.second_part div p {
+  font-family: "font-2", serif;
+  text-align: left;
+  font-style: italic;
+  line-height: 2;
+}
+.second_part::before {
+  content: "";
+  position: absolute;
+  background: rgb(210, 210, 210);
+  height: 1px;
+  width: 100%;
+  top: 0px;
+}
+.second_part::after {
+  content: "";
+  position: absolute;
+  background: rgb(210, 210, 210);
+  height: 100%;
+  width: 1px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 form {
