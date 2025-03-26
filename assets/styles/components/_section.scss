@@ -99,20 +99,15 @@
 
     &::before{
         content: "";
-            position: absolute;
-            background: $color1;
-            height: 1px;
-            width: 100%;
-            top: 0px;
+        position: absolute;
+        background: $color1;
+        height: 1px;
+        width: 100%;
+        top: 0px;
     }
 
     &::after{
-        content: "";
-            position: absolute;
-            background: $color1;
-            height: 100%;
-            width: 1px;
-            top: 50%;
-            transform: translateY(-50%);
+        @include middle-bar;
+        background: $color1;
     }
 }

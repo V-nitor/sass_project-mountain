@@ -67,13 +67,21 @@
 
     <footer>
         <form action="#">
-            <label for="firstname">name</label>
-            <input type="text" id="firstname" minlength="3" maxlength="15" required>
-            <label for="email">email</label>
-            <input type="text" id="email" minlength="3" maxlength="15" required>
-            <label for="message">message</label>
-            <textarea cols=30px rows=5px maxlength="50" id="message"></textarea>
-            <input type="submit" id="button" value="send message">
+            <div class="form-grid">
+                <div>
+                    <label for="firstname">name</label>
+                    <input type="text" id="firstname" minlength="3" maxlength="15" required>
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="text" id="email" minlength="3" maxlength="15" required>
+                </div>
+                <div>
+                    <label for="message">message</label>
+                    <textarea cols=30px rows=5px maxlength="50" id="message"></textarea>
+                </div>
+            </div>
+            <input type="submit" class="button2" value="send message">
         </form>
 
         <address>

@@ -1,3 +1,5 @@
+// Import V
+
 @font-face {
     font-family: "font-1";
     src: url(../fonts/Inter-ExtraBold.ttf);
@@ -7,6 +9,8 @@
     font-family: "font-2";
     src: url(../fonts/Merriweather-Light.ttf);
 }
+
+// General V
 
 * {
     margin: 0;
@@ -19,9 +23,13 @@
     text-transform: uppercase;
 }
 
-$color1: rgb(210, 210, 210);
+// Variables V
+
+$color1: rgba(0, 0, 0, 0.1);
 $white: white;
 $black: black;
+
+// Mixins V
 
 @mixin flexcenter{
     display: flex;
@@ -34,4 +42,12 @@ $black: black;
     margin: 0 auto;
     width: 72.5%;
     margin-bottom: 30px;
+}
+
+@mixin middle-bar {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 50%;
 }
