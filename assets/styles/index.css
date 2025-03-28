@@ -18,6 +18,10 @@
   text-transform: uppercase;
 }
 
+pre {
+  font-family: inherit;
+}
+
 body {
   background: url(../images/bg.jpg) fixed center/cover;
 }
@@ -285,7 +289,6 @@ footer::after {
 .second_part div p {
   font-family: "font-2", serif;
   text-align: left;
-  font-style: italic;
   line-height: 2;
 }
 .second_part::before {
@@ -334,17 +337,58 @@ form .form-grid textarea {
 address {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
-  margin: 40px;
+  font-style: normal;
 }
 address .contact {
   display: grid;
   grid-template-columns: 25% 75%;
+  position: relative;
 }
-address .contact ul {
+address .contact h4 {
+  font-family: "font1", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: auto 0 auto 30px;
+}
+address .contact .contact-info {
+  font-family: "font-2", serif;
+  margin: auto 0;
+}
+address .contact .contact-info p::first-letter {
+  text-transform: lowercase;
+}
+address .contact .contact-info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 50%;
+  width: 55%;
+}
+address .contact .contact-info ul a {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+address .contact::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  height: 1px;
+  width: 100%;
+  bottom: 0px;
 }/*# sourceMappingURL=index.css.map */

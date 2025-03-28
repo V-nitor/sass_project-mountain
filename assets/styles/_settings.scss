@@ -23,6 +23,11 @@
     text-transform: uppercase;
 }
 
+pre{
+    // inherit: "To use in Css General only if some elements don't want listen the rules of your Web site" at the bottom
+    font-family: inherit;
+}
+
 // Variables V
 
 $color1: rgba(0, 0, 0, 0.1);

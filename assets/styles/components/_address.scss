@@ -1,16 +1,56 @@
 address{
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
-    margin: 40px;
-
+    font-style: normal;
+    
     .contact{
         display: grid;
         grid-template-columns: 25% 75%;
+        position: relative;
+        
+        h4{
+            font-family: "font1", sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: auto 0 auto 30px;
+        }
 
-        ul{
-            display: flex;
-            justify-content: space-around ;
-            width: 50%;
+        .contact-info{
+            font-family: 'font-2', serif;
+            margin: auto 0;
+            
+            p::first-letter{
+                text-transform: lowercase;
+            }
+
+            ul{
+                display: flex;
+                justify-content: space-around ;
+                width: 55%;
+
+                a{
+                    color: $black;
+                    border: 1px solid $color1;
+                    border-radius: 50px;
+                    width: 45px;
+                    height: 45px;
+                    @include flexcenter;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        
+
+        &::after{
+            content: "";
+            position: absolute;
+            background: $color1;
+            height: 1px;
+            width: 100%;
+            bottom: 0px;
         }
     }
 }
