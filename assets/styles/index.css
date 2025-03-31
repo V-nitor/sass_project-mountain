@@ -114,26 +114,63 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-nav ol {
+nav .radio-container {
+  display: grid;
+  grid-template-columns: 35% 25% 40%;
+  font-size: 14px;
+  font-family: "font1", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 45%;
+  height: 100%;
+}
+nav .radio-container input[type=radio] {
+  display: none;
+}
+nav .radio-container input[type=radio]:checked + label {
+  background: rgb(245, 245, 245);
+  color: black;
+}
+nav .radio-container label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: white;
+}
+nav .radio-container label:hover {
+  background: rgb(245, 245, 245);
+  color: black;
 }
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 25%;
+  height: 75%;
 }
-nav li {
+nav ul li {
   list-style-type: none;
   text-align: center;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav ul li:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 main {
