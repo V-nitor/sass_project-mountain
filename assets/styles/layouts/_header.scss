@@ -35,12 +35,18 @@ header{
     }
 
     a{
-        border: 1px solid $white;
+        border: 2px solid $white;
         border-radius: 50px;
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         @include flexcenter;
         text-decoration: none;
+        transition: 1s;
+
+        &:hover{
+            @include button-hover;
+            margin-bottom: 5px;
+        }
     }
 }
 

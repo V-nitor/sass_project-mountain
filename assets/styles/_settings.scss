@@ -32,6 +32,7 @@ pre{
 
 $color1: rgba(0, 0, 0, 0.1);
 $color2: rgb(245, 245, 245);
+$color3: rgb(80, 155, 235);
 $white: white;
 $black: black;
 
@@ -41,6 +42,13 @@ $black: black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin button-hover{
+    border: 2px solid $color3;
+    background: $white;
+    color: $color3;
+    transform: scale(1.1);
 }
 
 @mixin main-layout {

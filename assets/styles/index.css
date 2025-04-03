@@ -82,10 +82,10 @@ header {
   font-style: italic;
 }
 .title a {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 50px;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,6 +96,16 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.title a:hover {
+  border: 2px solid rgb(80, 155, 235);
+  background: white;
+  color: rgb(80, 155, 235);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin-bottom: 5px;
 }
 
 nav {
@@ -218,9 +228,18 @@ footer::after {
   font-weight: bold;
   color: black;
   background: white;
-  border: 3px solid black;
-  padding: 10px 30px;
+  border: 2px solid black;
+  padding: 15px 40px;
   text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.button2:hover, .button2:visited:hover {
+  border: 2px solid rgb(80, 155, 235);
+  background: white;
+  color: rgb(80, 155, 235);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main_part {
@@ -261,10 +280,11 @@ footer::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: 600;
   font-family: "font1", sans-serif;
   text-transform: uppercase;
-  word-spacing: 10px;
+  word-spacing: 2.5px;
   letter-spacing: 2.5px;
   margin: 50px 0 25px;
 }
@@ -276,7 +296,7 @@ footer::after {
   font-family: "font-2", serif;
   font-style: italic;
   line-height: 2;
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -293,7 +313,7 @@ footer::after {
   position: relative;
 }
 .second_part div {
-  margin: 50px;
+  margin: 75px 50px;
 }
 .second_part div h3 {
   font-size: 1em;
@@ -313,11 +333,12 @@ footer::after {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 1.5em;
+  font-weight: 600;
   font-family: "font1", sans-serif;
   text-transform: uppercase;
-  word-spacing: 10px;
-  letter-spacing: 2.5px;
-  margin: 50px 0 25px;
+  word-spacing: 2.5px;
+  letter-spacing: 1.5px;
+  margin: 25px 0;
 }
 .second_part div h2 span {
   line-height: 1.25;
@@ -325,8 +346,10 @@ footer::after {
 }
 .second_part div p {
   font-family: "font-2", serif;
-  text-align: left;
   line-height: 2;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
 }
 .second_part::before {
   content: "";

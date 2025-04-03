@@ -11,7 +11,12 @@
     font-weight: bold;
     color: $black;
     background: $white;
-    border: 3px solid $black;
-    padding: 10px 30px;
+    border: 2px solid $black;
+    padding: 15px 40px;
     text-decoration: none;
+    transition: 1s;
+
+    &:hover{
+        @include button-hover;
+    }
 }
