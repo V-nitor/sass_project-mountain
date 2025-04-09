@@ -18,6 +18,16 @@
   text-transform: uppercase;
 }
 
+*::-moz-selection {
+  color: rgb(80, 155, 235);
+  background-color: rgb(225, 215, 215);
+}
+
+*::selection {
+  color: rgb(80, 155, 235);
+  background-color: rgb(225, 215, 215);
+}
+
 pre {
   font-family: inherit;
 }
@@ -81,7 +91,7 @@ header {
   font-family: "font-2", serif;
   font-style: italic;
 }
-.title a {
+.title .button-top {
   border: 2px solid white;
   border-radius: 50px;
   width: 50px;
@@ -99,7 +109,8 @@ header {
   -webkit-transition: 1s;
   transition: 1s;
 }
-.title a:hover {
+.title .button-top:hover {
+  cursor: pointer;
   border: 2px solid rgb(80, 155, 235);
   background: white;
   color: rgb(80, 155, 235);
@@ -233,8 +244,13 @@ footer::after {
   text-decoration: none;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .button2:hover, .button2:visited:hover {
+  cursor: pointer;
   border: 2px solid rgb(80, 155, 235);
   background: white;
   color: rgb(80, 155, 235);
@@ -370,6 +386,7 @@ footer::after {
 
 form {
   margin: 60px 50px 70px;
+  overflow: visible;
 }
 form .form-grid {
   display: grid;
@@ -387,11 +404,29 @@ form .form-grid label {
 form .form-grid input {
   height: 40px;
   width: 100%;
+  font-family: "font-2", serif;
+  font-size: 18.5px;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+form .form-grid input:focus {
+  outline: none;
+  border-style: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 form .form-grid textarea {
   resize: none;
   height: 200px;
   width: 100%;
+  font-family: "font-2", serif;
+  font-size: 18.5px;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+form .form-grid textarea:focus {
+  outline: none;
+  border-style: outset;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 address {
@@ -401,7 +436,7 @@ address {
 }
 address .contact {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 150px 1fr;
   position: relative;
 }
 address .contact h4 {
@@ -426,10 +461,25 @@ address .contact .contact-info ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 55%;
+  min-width: 220px;
+  max-width: 250px;
 }
-address .contact .contact-info ul a {
+address .contact .contact-info ul li {
+  width: 52.5px;
+  height: 52.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+address .contact .contact-info ul .button-bottom {
   color: black;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   width: 45px;
   height: 45px;
@@ -443,6 +493,16 @@ address .contact .contact-info ul a {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+address .contact .contact-info ul .button-bottom:hover {
+  cursor: pointer;
+  border: 2px solid rgb(80, 155, 235);
+  background: white;
+  color: rgb(80, 155, 235);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 address .contact::after {
   content: "";

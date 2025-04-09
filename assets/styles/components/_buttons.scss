@@ -15,7 +15,8 @@
     padding: 15px 40px;
     text-decoration: none;
     transition: 1s;
-
+    user-select: none;
+    
     &:hover{
         @include button-hover;
     }

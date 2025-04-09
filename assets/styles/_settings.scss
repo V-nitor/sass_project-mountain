@@ -10,6 +10,15 @@
     src: url(../fonts/Merriweather-Light.ttf);
 }
 
+// Variables V
+
+$color1: rgba(0, 0, 0, 0.1);
+$color2: rgb(245, 245, 245);
+$color3: rgb(80, 155, 235);
+$color4: rgb(225, 215, 215);
+$white: white;
+$black: black;
+
 // General V
 
 * {
@@ -23,18 +32,15 @@
     text-transform: uppercase;
 }
 
+*::selection{
+    color: $color3;
+    background-color: $color4;
+}
+
 pre{
     // inherit: "To use in Css General only if some elements don't want listen the rules of your Web site" at the bottom
     font-family: inherit;
 }
-
-// Variables V
-
-$color1: rgba(0, 0, 0, 0.1);
-$color2: rgb(245, 245, 245);
-$color3: rgb(80, 155, 235);
-$white: white;
-$black: black;
 
 // Mixins V
 
@@ -45,6 +51,7 @@ $black: black;
 }
 
 @mixin button-hover{
+    cursor: pointer;
     border: 2px solid $color3;
     background: $white;
     color: $color3;
