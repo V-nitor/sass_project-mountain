@@ -114,3 +114,39 @@ nav{
         }
     }
 }
+
+// Responsive
+
+@media screen and (max-width: 1099.5px) {
+    // Warning: In Sass, always surround the element to change with his parent. Despite you don't want modify this one like below
+    .title{
+        h1{
+            font-size: 2em;
+            word-spacing: 10px;
+            letter-spacing: 2.5px;
+    
+            span{
+                line-height: 1.25;
+                font-size: 1em;
+            }
+        }
+    }
+
+    nav{
+        display: block;
+
+        .radio-container{
+            grid-template-columns: 35% 30% 35%;
+            font-size: 10px;
+            width: 100%;
+
+            label{
+                letter-spacing: 2px;
+            }
+        }
+
+        ul {
+            display: none;
+        }
+    }
+}

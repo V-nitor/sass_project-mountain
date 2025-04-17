@@ -2,31 +2,22 @@
     margin: 50px;
     
     h3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        text-transform: none;
         font-size: 1em;
         font-family: 'font-2', serif;
         font-weight: 400;
-        position: relative;
-        width: 90%;
-        margin: 0 auto;
 
-        &::before{
-            content: "";
-            position: absolute;
-            background: $color1;
-            height: 1px;
-            width: 30vw;
-            right: 60%;
-            bottom: 10px;
-        }
-        
+        &::before,
         &::after{
             content: "";
-            position: absolute;
+            flex: 1;
             background: $color1;
             height: 1px;
-            width: 30vw;
-            left: 60%;
-            bottom: 10px;
+            margin: 0 50px;
         }
     }
     
@@ -112,5 +103,28 @@
     &::after{
         @include middle-bar;
         background: $color1;
+    }
+}
+
+@media screen and (max-width: 1099.5px) {
+    .main_part{
+        margin: 50px 20px;
+
+        h3{    
+            &::before,
+            &::after{
+                margin: 0 10px;
+            }
+        }
+
+        h2{
+            font-size: 1.5em;
+            margin: 50px 0 25px;
+        }
+        
+        p{
+            line-height: 2.5;
+            width: 70%;
+        }
     }
 }
