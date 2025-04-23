@@ -251,6 +251,15 @@ footer::after {
   background: rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1099.5px) {
+  footer {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+  footer::after {
+    display: none;
+  }
+}
 .button-top, .button-top:visited {
   color: white;
 }
@@ -283,6 +292,14 @@ footer::after {
           transform: scale(1.1);
 }
 
+@media screen and (max-width: 1099.5px) {
+  .button2, .button2:visited {
+    margin-top: 20px;
+    font-size: 12px;
+    padding: 12px 25px;
+    letter-spacing: 1px;
+  }
+}
 .main_part {
   margin: 50px;
 }
@@ -423,6 +440,25 @@ footer::after {
     line-height: 2.5;
     width: 70%;
   }
+  .second_part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .second_part div {
+    margin: 55px 40px;
+  }
+  .second_part div p {
+    font-family: "font-2", serif;
+    line-height: 2;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .second_part::after {
+    display: none;
+  }
 }
 form {
   margin: 60px 50px 70px;
@@ -469,6 +505,11 @@ form .form-grid textarea:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1099.5px) {
+  form {
+    margin: 45px 40px 55px;
+  }
+}
 address {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
@@ -544,11 +585,34 @@ address .contact .contact-info ul .button-bottom:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-address .contact::after {
+address .contact::before {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.1);
   height: 1px;
   width: 100%;
-  bottom: 0px;
+  top: 0px;
+}
+
+@media screen and (max-width: 1099.5px) {
+  address {
+    height: 400px;
+  }
+  address .contact {
+    grid-template-columns: 30vw 1fr;
+  }
+  address .contact .contact-info {
+    font-size: 12px;
+    overflow: visible;
+  }
+  address .contact .contact-info ul {
+    width: 42vw;
+    min-width: auto;
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  address .contact .contact-info ul .button-bottom {
+    width: 35px;
+    height: 35px;
+  }
 }/*# sourceMappingURL=index.css.map */

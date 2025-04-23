@@ -57,14 +57,39 @@ address{
             
         }
         
-
-        &::after{
+        &::before{
             content: "";
             position: absolute;
             background: $color1;
             height: 1px;
             width: 100%;
-            bottom: 0px;
+            top: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 1099.5px) {
+    address{
+        height: 400px;
+
+        .contact{
+            grid-template-columns: 30vw 1fr;
+    
+            .contact-info{
+                font-size: 12px;
+                overflow: visible;
+    
+                ul{
+                    width: 42vw;
+                    min-width: auto;
+                    transform: translateX(-5px);
+    
+                    .button-bottom{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }    
+            }
         }
     }
 }

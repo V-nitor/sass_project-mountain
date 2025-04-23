@@ -9,3 +9,14 @@ footer{
         background: $color1;
     }
 }
+
+@media screen and (max-width: 1099.5px) {
+    footer{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+
+        &::after{
+            display: none;
+        }
+    }
+}

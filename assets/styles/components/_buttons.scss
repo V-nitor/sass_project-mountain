@@ -21,3 +21,12 @@
         @include button-hover;
     }
 }
+
+@media screen and (max-width: 1099.5px) {
+    .button2, .button2:visited{
+        margin-top: 20px;
+        font-size: 12px;
+        padding: 12px 25px;
+        letter-spacing: 1px;
+    }
+}
