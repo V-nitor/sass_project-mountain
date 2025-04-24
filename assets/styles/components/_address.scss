@@ -68,6 +68,8 @@ address{
     }
 }
 
+// Responsive
+
 @media screen and (max-width: 1099.5px) {
     address{
         height: 400px;
@@ -76,17 +78,21 @@ address{
             grid-template-columns: 30vw 1fr;
     
             .contact-info{
-                font-size: 12px;
+                font-size: 14px;
                 overflow: visible;
     
                 ul{
-                    width: 42vw;
+                    width: 50vw;
                     min-width: auto;
-                    transform: translateX(-5px);
+                    transform: translateX(-10px);
     
                     .button-bottom{
                         width: 35px;
                         height: 35px;
+
+                        i{
+                            overflow: visible;
+                        }
                     }
                 }    
             }

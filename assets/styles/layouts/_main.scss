@@ -5,6 +5,14 @@ main{
 
 img{
     display: block;
-    margin: 25px auto 25px;
+    margin: 35px auto 30px;
     width: 90%;
+}
+
+// Responsive
+
+@media screen and (max-width: 1099.5px) {
+    main{
+        width: 85%;
+    }
 }

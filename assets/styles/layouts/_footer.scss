@@ -10,8 +10,11 @@ footer{
     }
 }
 
+// Responsive
+
 @media screen and (max-width: 1099.5px) {
     footer{
+        width: 85%;
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
 
