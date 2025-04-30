@@ -15,90 +15,89 @@
 <body>
 
     <header>
-        <h1>the mountains win you over</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi esse nulla dignissimos officia quisquam iusto voluptate dolorum. Et, voluptatibus quod!</p>
-        <a href="#" class="button1"><i class="fa-solid fa-arrow-down"></i></a>
+        <div class="header-content">
+            <h1>the mountains<br>win you over</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi esse nulla dignissimos officia quisquam iusto voluptate dolorum. Et, voluptatibus quod!</p>
+            <span><a href="#" class="button1"><i class="fa-solid fa-arrow-down"></i></a></span>
+        </div>
+        <nav>
+            <ul class="nav-left">
+                <li>this is massively</li>
+                <li>generic page</li>
+                <li>elements reference</li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="https://about.x.com/fr" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li>this is massively</li>
-            <li>generic page</li>
-            <li>elements reference</li>
-        </ul>
-        <ul>
-            <li> <a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="main_part">
-            <h3>april 25, 2017</h3>
-            <h2>and this is a massive headline</h2>
+    <main id="main">
+        <section class="main_section">
+            <span>april 25, 2017</span>
+            <h2>and this is a <br>massive headline</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus corporis facilis similique quia illo ipsum veritatis voluptatum accusantium neque, doloribus velit? Assumenda velit culpa neque quod nulla sint iste. Temporibus numquam dolor quasi perferendis ut sed ad magnam placeat!</p>
             <img src="./assets/images/pic01.jpg" alt="Guy who jump from hill">
-            <a href="#" class="button2">full story</a>
+            <button href="#" class="btn">full story</button>
         </section>
     
-        <section class="second_part">
-            <div>
-                <h3>april 25, 2017</h3>
-                <h2>picture 2 present:</h2>
+        <section class="second_section">
+            <div class="left-part">
+                <span>april 24, 2017</span>
+                <h3>picture 2<br>present:</h3>
                 <img src="./assets/images/pic02.jpg" alt="Far-off view">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat omnis modi saepe debitis natus, ad pariatur culpa odio vitae!</p>
-                <a href="#" class="button2">full story</a>
+                <button href="#" class="btn">full story</button>
             </div>
-            <div>
-                <h3>april 25, 2017</h3>
-                <h2>picture 3 present:</h2>
-                <img src="./assets/images/pic03.jpg" alt="Two men far away">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat omnis modi saepe debitis natus, ad pariatur culpa odio vitae!</p>
-                <a href="#" class="button2">full story</a>
+            <div class="right-part">
+                <span>april 22, 2017</span>
+                <h3>picture 3<br>present:</h3>
+                <img src="./assets/images/pic02.jpg" alt="Far-off view">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sequi laborum numquam hic reiciendis nam temporibus minus dolorum obcaecati nesciunt?</p>
+                <button href="#" class="btn">full story</button>
             </div>
         </section>
     </main>
 
     <footer>
         <form action="#">
-            <label for="firstname">name</label>
-            <input type="text" id="firstname" minlength="3" maxlength="15" required>
+            <label for="name">name</label>
+            <input type="text" id="name" minlength="3" maxlength="15" required>
             <label for="email">email</label>
             <input type="text" id="email" minlength="3" maxlength="15" required>
             <label for="message">message</label>
-            <textarea cols=30px rows=5px maxlength="50" id="message"></textarea>
-            <input type="submit" id="button" value="send message">
+            <textarea maxlength="50" id="message"></textarea>
+            <div class="submit-container">
+                <input type="submit" class="btn" value="send message">
+            </div>
         </form>
 
-        <address>
-            <div class="contact">
-                <h4>address</h4>
-                <pre>1234 Somewhere Road #87257
-Nashcity, TN ooooo-oooo
-                </pre>
+        <div class="infos-contact">
+            <div>
+                <h3>address</h3>
+                <p><br>1234 Somewhere Road #87257<br>Nashcity, TN 00000-0000</p>
             </div>
-            <div class="contact">
-                <h4>phone</h4>
-                <p>(ooo)ooo-oooo</p>
+            <div>
+                <h3>phone</h3>
+                <p>(000) 000-0000</p>
             </div>
-            <div class="contact">
-                <h4>email</h4>
+            <div>
+                <h3>email</h3>
                 <p>info@untitled.ltd</p>
             </div>
-            <div class="contact">
-                <h4>social</h4>
+            <div class="social">
+                <h3>social</h3>
                 <ul>
-                    <ul>
-                        <li> <a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-                    </ul>
+                    <li><a href="https://about.x.com/fr" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                 </ul>
             </div>
-        </address>
+        </div>
     </footer>
 
 </body>
