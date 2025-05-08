@@ -83,6 +83,13 @@ li{
 a,
 a:visited{
     color: $white1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    // Notice= For futur projects, if the majority anchor are button but some anchor are classic link... So give that to the bit of anchor= "height: auto;" & "width: auto;"
 }
 
 .btn{
