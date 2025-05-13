@@ -65,9 +65,10 @@
     <footer>
         <form action="#">
             <label for="name">name</label>
-            <input type="text" id="name" minlength="3" maxlength="15" required>
+            <input type="text" id="name" minlength="3" maxlength="15" required autocomplete="off">
+            <!-- autocomplete="off": mean don't  suggest previous choices at the top -->
             <label for="email">email</label>
-            <input type="text" id="email" minlength="3" maxlength="15" required>
+            <input type="text" id="email" minlength="3" maxlength="15" required autocomplete="off">
             <label for="message">message</label>
             <textarea maxlength="50" id="message"></textarea>
             <div class="submit-container">

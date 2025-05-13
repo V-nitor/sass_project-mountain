@@ -248,9 +248,108 @@ main .main_section span::before, main .main_section span::after {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media screen and (max-width: 575px) {
+  main .main_section span::before, main .main_section span::after {
+    width: 30%;
+  }
+}
 main .main_section span::before {
   left: 0;
 }
 main .main_section span::after {
   right: 0;
+}
+main .main_section h2 {
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+main .main_section p {
+  width: 60%;
+  margin: 30px auto;
+  line-height: 35px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+main .main_section .btn {
+  margin: 50px 0 90px;
+}
+main .second_section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid rgb(209, 209, 209);
+}
+main .second_section .left-part,
+main .second_section .right-part {
+  padding: 60px;
+}
+main .second_section .left-part span,
+main .second_section .right-part span {
+  font-size: 0.75em;
+}
+main .second_section .left-part h3,
+main .second_section .right-part h3 {
+  margin: 20px 0;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+main .second_section .left-part p,
+main .second_section .right-part p {
+  text-align: left;
+  line-height: 30px;
+  margin: 30px 0;
+  font-size: 0.8em;
+}
+main .second_section .left-part {
+  border-right: 1px solid rgb(209, 209, 209);
+}
+
+footer {
+  width: 85%;
+  margin: 0 auto 70px;
+  background: rgb(233, 233, 233);
+  min-height: 640px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer form {
+  display: grid;
+  gap: 18px;
+  padding: 60px 50px;
+  grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+  border-right: 1px solid rgb(209, 209, 209);
+}
+footer form label {
+  text-align: left;
+  font-size: 0.7em;
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(105, 105, 105);
+}
+footer form input[type=text],
+footer form textarea {
+  background: none;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 4px;
+  resize: none;
+}
+footer form .submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+footer form .submit-container .btn {
+  color: rgb(105, 105, 105);
+  border: 2px solid rgb(105, 105, 105);
+}
+footer .infos-contact {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
 }/*# sourceMappingURL=index.css.map */
