@@ -137,6 +137,11 @@ header .header-content h1 {
   font-size: 4em;
   letter-spacing: 6px;
 }
+@media screen and (max-width: 839.5px) {
+  header .header-content h1 {
+    font-size: 2em;
+  }
+}
 header .header-content p {
   margin: 40px auto 60px;
   font-style: italic;
@@ -194,6 +199,11 @@ header nav .nav-left li {
           align-items: center;
   cursor: pointer;
 }
+@media screen and (max-width: 839.5px) {
+  header nav .nav-left li {
+    font-size: 0.5em;
+  }
+}
 header nav .nav-left li:first-child {
   background: rgb(243, 243, 243);
   color: rgb(17, 17, 17);
@@ -210,6 +220,11 @@ header nav .nav-right {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-right: 10px;
+}
+@media screen and (max-width: 839.5px) {
+  header nav .nav-right {
+    display: none;
+  }
 }
 header nav .nav-right li {
   -webkit-transition: 0.15s;
@@ -265,6 +280,11 @@ main .main_section h2 {
   text-transform: uppercase;
   font-size: 3em;
 }
+@media screen and (max-width: 839.5px) {
+  main .main_section h2 {
+    font-size: 1.5em;
+  }
+}
 main .main_section p {
   width: 60%;
   margin: 30px auto;
@@ -279,6 +299,11 @@ main .second_section {
   display: grid;
   grid-template-columns: 50% 50%;
   border-top: 1px solid rgb(209, 209, 209);
+}
+@media screen and (max-width: 839.5px) {
+  main .second_section {
+    grid-template-columns: 1fr;
+  }
 }
 main .second_section .left-part,
 main .second_section .right-part {
@@ -314,6 +339,11 @@ footer {
   min-height: 640px;
   display: grid;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 950px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
 }
 footer form {
   display: grid;
@@ -352,4 +382,54 @@ footer form .submit-container .btn {
 footer .infos-contact {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+}
+@media screen and (max-width: 950px) {
+  footer .infos-contact div:nth-child(1) {
+    border-top: 1px solid rgb(209, 209, 209);
+    padding-bottom: 20px;
+  }
+}
+footer .infos-contact div {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 950px) {
+  footer .infos-contact div {
+    grid-template-columns: 45% 55%;
+  }
+}
+footer .infos-contact div h3 {
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding-left: 40px;
+  text-align: left;
+  color: rgb(105, 105, 105);
+}
+footer .infos-contact div p {
+  font-size: 0.8em;
+  line-height: 26px;
+  text-align: left;
+  color: gray;
+}
+footer .infos-contact .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .infos-contact .social ul li {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 150px;
+  height: 40px;
+  width: 40px;
+  font-size: 0.9em;
+  margin-right: 12px;
+}
+footer .infos-contact .social ul li a {
+  color: rgb(17, 17, 17);
 }/*# sourceMappingURL=index.css.map */

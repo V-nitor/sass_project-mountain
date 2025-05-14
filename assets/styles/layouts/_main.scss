@@ -43,6 +43,10 @@ main{
         h2{
             @include title;
             font-size: 3em;
+
+            @media  screen and (max-width: 839.5px) {
+                font-size: 1.5em;
+            }
         }
     
         p{
@@ -62,6 +66,10 @@ main{
         display: grid;
         grid-template-columns: 50% 50%;
         border-top: 1px solid $grey1;
+
+        @media  screen and (max-width: 839.5px) {
+            grid-template-columns: 1fr;
+        }
 
         .left-part,
         .right-part{

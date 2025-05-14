@@ -23,6 +23,10 @@ header{
             @include title;
             font-size: 4em;
             letter-spacing: 6px;
+
+            @media  screen and (max-width: 839.5px) {
+                font-size: 2em;
+            }
         }
 
         p{
@@ -74,6 +78,10 @@ header{
                 align-items: center;
                 cursor: pointer;
 
+                @media  screen and (max-width: 839.5px) {
+                font-size: 0.5em;
+                }
+
                 &:first-child{
                     background: $white1;
                     color: $black1;
@@ -93,6 +101,10 @@ header{
             min-width: 100px;
             justify-content: space-around;
             margin-right: 10px;
+
+            @media  screen and (max-width: 839.5px) {
+                display: none;
+            }
 
             li{
                 transition: 0.15s;
